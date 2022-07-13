@@ -43,17 +43,6 @@ For this analysis I will be utilizing the following tables:
 2. Logistic Regression - Binary classification model for predicting whether or not a customer will reorder a product.
 3. XBoost Model - Classification model to identify future re-orders from existing customers. 
 
-## Results 
-Confidence - 
-
-
-Lift - 
-
-
-Support - 
-
-
-Model Results - 
 
 # Conclusion 
 ## Results
@@ -96,7 +85,7 @@ There are a number of steps I would like to take in the future to improve result
 2. **Datetime Considerations** - While this analysis largely focused on user behavior as it pertained to order history and products, implementing additional features around when a user orders certain items, how often customers are making "stock up" baskets versus "everyday" baskets and more could improve the overall results of the model. <br><br>
 3. **Reviews & Ratings** - With more data around product reviews and ratings on a customer level, I would like to implement a Collaborative Item-Based Filtering recommender system to see how it compares to the binary classificaiton model implemented in this notebook. 
 
-# For More Information
+## For More Information
 Please refer to the [EDA](https://github.com/brandmend/Instacart_Basket_Prediction_Analysis/blob/main/Instacart_Basket_Analysis_EDA_LogReg.ipynb) & [Apriori](https://github.com/brandmend/Instacart_Basket_Prediction_Analysis/blob/main/Instacart_Basket_Analysis_Apriori.ipynb) Jupyter Notebooks or the presentation.
 
 For additional information, please contact Brandon Menendez at [bmenendez94@gmail.com](bmenendez94@gmail.com) or on [LinkedIn](http://linkedin.com/in/brandon-menendez/) 
