@@ -55,19 +55,48 @@ Support -
 
 Model Results - 
 
-## Conclusion 
+# Conclusion 
+## Results
+#### Logistic Regression:
+- The best model I ran had 90% Precision and 88% Recall scores. 
 
+![Confusion Matrix](./images/confusion_matrix.png)
 
+#### XGBoost:
+- Using XGBoost, I was able to identify the most important features in prediciting customer reorders. In older notebooks, I fit the model onto the train data, but was not getting results better than the LogReg model. The top three important features for this model were:
+   1. user_reorder_ratio
+   2. add_to_cart_order
+   3. prd_reorder_ratio
+   
+#### Apriori:
+- The Apriori Algorithm analysis was successful in identifying frequent item sets. Some observations:
+   - Produce and/or Dairy items are included in all of the top item sets
+   - Banana's are the number one basket builder for customers 
+   - Top Item Combinations by Association Rule:
+       - **Lift:** Organic Raspberries & Organic Strawberries
+       - **Support:** Bag of Organic Bananas & Organic Haas Avocados
+       - **Confidence:** Organic Fuji Apple & Banana
 
+## Recommendations
+From this analysis I have generated the following recommendations that Instacart can utilize:
+
+1. **Banana's are important.** Since Bananas are the number one basket building item, offering promotions on these products is a good way to get people in the door<br><br>
+
+2. **Merchandising:** Using the reorder prediction model and frequent item sets, Instacart can better inform  merchandising decisions to answer questions like, What 'aisles' or products should be displayed near each other? Understanding the answer to questions like these are important in targeting merchandising placements & display ads to individual users could help Instacart maximize each user's basket. <br><br>
+
+3. **Recommendations**: Understanding what a customer is going to order in the future is important for product recommendations. Using the predictive LogReg model, Instacart can optimize recommendation widgets like 'Add to Cart' with the likely items that customer will order. <br><br>
+
+4. **Promotional Strategy:** Online grocers are in a unique position to cross merchandise products that wouldn't normally live together in a traditional grocery store, for example, ice cream and hot dogs for the Fourth of July. Using the Apriori results, Instacart can understand what items are commonly (or uncommonly) ordered together in order to implement targeted promotions to customers. 
+    
 
 ## Future Steps 
-1. Markdowns and excess inventory 
-2. Display Ad Opportunity Cost 
-3. Basket Margin Optimization 
-4. Reviews & Ratings 
+There are a number of steps I would like to take in the future to improve results of this analysis. These include the following:
 
+1. **Display Ad Opportunity Cost** - With additional data regarding average product costs and average sales price, this analysis can be updated to identify the opportunity cost of showing one product to a customer over another. For example, if we know that Customer X orders Corn Flakes every week, we can use the model to identify frequently bundled items and display the item to Customer X that generates the most profit for Instacart while also keeping the customer happy <br><br>
+2. **Datetime Considerations** - While this analysis largely focused on user behavior as it pertained to order history and products, implementing additional features around when a user orders certain items, how often customers are making "stock up" baskets versus "everyday" baskets and more could improve the overall results of the model. <br><br>
+3. **Reviews & Ratings** - With more data around product reviews and ratings on a customer level, I would like to implement a Collaborative Item-Based Filtering recommender system to see how it compares to the binary classificaiton model implemented in this notebook. 
 
-## For More Information
+# For More Information
 Please refer to the [EDA](https://github.com/brandmend/Instacart_Basket_Prediction_Analysis/blob/main/Instacart_Basket_Analysis_EDA_LogReg.ipynb) & [Apriori](https://github.com/brandmend/Instacart_Basket_Prediction_Analysis/blob/main/Instacart_Basket_Analysis_Apriori.ipynb) Jupyter Notebooks or the presentation.
 
 For additional information, please contact Brandon Menendez at [bmenendez94@gmail.com](bmenendez94@gmail.com) or on [LinkedIn](http://linkedin.com/in/brandon-menendez/) 
