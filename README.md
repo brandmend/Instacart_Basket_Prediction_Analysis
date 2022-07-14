@@ -1,7 +1,7 @@
 # Instacart Market Basket Analysis
 Author: **Brandon Menendez**
 
-![Instacart, Market Basket Analysis](./images/market_basket.jpg)
+![Instacart, Market Basket Analysis](./images/online-shopping.png)
 
 ## Business Problem 
 >"*Online grocery shopping in the U.S. trails that of other e-commerce categories in large part because our grocery shopping habits are so deeply ingrained, and online grocery retailers haven't yet convinced customers that grocery shopping online can be a better experience*" <br> <br>
@@ -12,9 +12,9 @@ When the COVID-19 pandemic hit, many Americans opted to stay in their homes and 
 
 This sudden increase in customer's shopping online was a major tailwind for online grocers. But just as important as customer acquisition is for these companies, so is customer retention. Like the classic saying goes, "Old habits die hard" and online grocers need to ensure they are utilizing their technology to provide a more convenient shopping experience in order to hold on to those customers deciding to shop online rather than in-store. There are three major tools that all online grocers can utilize in an attempt to retain customers gained during the pandemic:
 
-1. **Merchandising:** (blurb about Merchandising)
-2. **Recommendations:** (blurb about recommendation)
-3. **Coupons & Promotios:** (blurb about coupons and promotions)
+1. Merchandising
+2. Recommendations
+3. Coupons & Promotios
 
 Instacart is a grocery ordering and delivery app, which has over 500 million products available across 40,000 grocery stores in the United States & Canada. Instacart provides a convenient customer experience, which is largely focused around product recommendations based on past purchases. In addition to recommendaiton widgets  (Add to Cart, Frequently bought together etc), Instacart also works with retailers to provide targeted promotions and coupons to its customers. 
 
@@ -71,7 +71,7 @@ From this analysis I have generated the following recommendations that Instacart
 
 1. **Banana's are important.** Since Bananas are the number one basket building item, offering promotions on these products is a good way to get people in the door<br><br>
 
-2. **Merchandising:** Using the reorder prediction model and frequent item sets, Instacart can better inform  merchandising decisions to answer questions like, What 'aisles' or products should be displayed near each other? Understanding the answer to questions like these are important in targeting merchandising placements & display ads to individual users could help Instacart maximize each user's basket. <br><br>
+2. **Merchandising:** Using the reorder prediction model and frequent item sets, Instacart can better inform  merchandising decisions to answer questions like, What 'aisles' or products should be displayed near each other? Understanding the answer to questions like these are important in targeting merchandising placements & display ads to individual users and could help Instacart maximize each user's basket. <br><br>
 
 3. **Recommendations**: Understanding what a customer is going to order in the future is important for product recommendations. Using the predictive LogReg model, Instacart can optimize recommendation widgets like 'Add to Cart' with the likely items that customer will order. <br><br>
 
@@ -91,8 +91,9 @@ Please refer to the [EDA](https://github.com/brandmend/Instacart_Basket_Predicti
 For additional information, please contact Brandon Menendez at [bmenendez94@gmail.com](bmenendez94@gmail.com) or on [LinkedIn](http://linkedin.com/in/brandon-menendez/) 
 
 
-## Repository Structure 
+## Repository Navigation 
 > - images
+> - old_notebooks
 > - Instacart_Basket_Analysis_EDA_LogReg.ipynb
 > - presentation
 > - README.md
