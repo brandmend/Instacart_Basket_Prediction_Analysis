@@ -1,7 +1,7 @@
 # Instacart Market Basket Analysis
 Author: **Brandon Menendez**
 
-![Instacart, Market Basket Analysis](./images/online-shopping.png)
+![Instacart, Market Basket Analysis](./images/online-shopping.jpg)
 
 ## Business Problem 
 >"*Online grocery shopping in the U.S. trails that of other e-commerce categories in large part because our grocery shopping habits are so deeply ingrained, and online grocery retailers haven't yet convinced customers that grocery shopping online can be a better experience*" <br> <br>
